@@ -1,0 +1,80 @@
+body {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+#contactMe {
+    background-color: whitesmoke;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form label {
+    color: gray;
+}
+
+form input {
+    border: none;
+    padding: 10px;
+    background-color: #efefef;
+    width: 300px;
+}
+
+form textarea {
+    width: 315px;
+    height: 90px;
+    resize: none;
+}
+
+form input[type="submit"] {
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+}
+
+form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+  @media screen and (max-width: 1100px) {
+    body {
+      width: 900px;
+      margin: 0px auto;
+    }
+    #contactMe {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    body {
+      width: 700px;
+      margin: 0px auto;
+    }
+    #contactMe {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    body {
+      width: 500px;
+      margin: 0px auto;
+    }
+    #contactMe {
+        display: block;
+        padding: 10px 70px;
+    }
+    form input[type="submit"] {
+        margin-bottom: 30px;
+    }
+  }
