@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mediaqueries.css">
     <title>Portofolio</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./javascript/validimiFormes.js"></script>
 </head>
 <body>
 
@@ -26,15 +28,13 @@
             <p><i>Bachelor in Computer Engineering</i></p>
             <span>&#9900; September 2018 - October 2021</span>
     
-            <br><br>
     
-            <h1>High School</h1>
+            <h1 class="educationSections">High School</h1>
             <p><i>Shaban Spahija, Technical School</i></p>
             <span>&#9900; September 2015 - June 2018</span>
     
-            <br><br>
     
-            <h1>Primary School</h1>
+            <h1 class="educationSections">Primary School</h1>
             <p><i>7 Shtatori, Peje</i></p>
             <span>&#9900; September 2006 - June 2015</span>
         </div>
@@ -48,6 +48,7 @@
                 <a href="https://uranlajqi.github.io/input-text-displayer/" target="_blank">
                     <img src="./foto/work1.PNG" alt="input text project" width="500">
                 </a>
+                <div class="ndaje"></div>
                 <span>
                     A website in witch you can write <br>comments and send those comments.
                 </span>
@@ -56,6 +57,7 @@
                 <a href="https://9fx57cpxyqznsyk6aobl9w-on.drv.tw/www.autori.com/html%20files/" target="_blank">
                     <img src="./foto/work2.PNG" alt="input text project" width="500">
                 </a>
+                <div class="ndaje"></div>
                 <span>
                     A website for an author. There are multiple<br> pages where you can find
                     his biography, writing,<br> interviews and some of his books.
@@ -65,6 +67,7 @@
                 <a href="https://focused-kowalevski-db5a77.netlify.app/" target="_blank">
                     <img src="./foto/work3.PNG" alt="input text project" width="500">
                 </a>
+                <div class="ndaje"></div>
                 <span>
                     A website where you can search for a<br> book and if it is there you
                     read it or download it.
@@ -77,18 +80,18 @@
     </section>
 
     <div id="contactMe" style="padding: 80px 0px;">
-        <form>
+        <form name="myForm" action="./php/formsent.php" onsubmit="return validateForm()" method="post">
             <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
             <br><br>
             <label for="lastName">Last name</label><br>
-            <input type="text" name="lastName" id="lastName" placeholder="Your last name">
+            <input type="text" name="lastName" id="lastName" placeholder="Your last name" required>
             <br><br>
             <label for="email">Your email*</label><br>
             <input type="email" name="email" id="email" placeholder="Your email address" required>
             <br><br>
             <label for="message">Message*</label><br>
-            <textarea id="message" onclick="Fshije()" required>Enter your message 
+            <textarea id="message" onclick="Fshije()" name="message" required>Enter your message 
             </textarea>
             <br><br>
             <input type="submit" value="Submit">
