@@ -3,7 +3,7 @@ function Header() {
         <div>
             <h1>Hi, Im Uran Lajçi</h1>
             <p>Programmer, Student, Web Developer</p>
-            <a href="#se_skillz">SEE MY SKILLS</a> 
+            <a href="#skills">SEE MY SKILLS</a> 
         </div>
     );
 }
