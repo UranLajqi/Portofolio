@@ -1,0 +1,74 @@
+.ndaje {
+    display: none;
+}
+
+.educationSections {
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        font-size: 20px;
+        height: 350px;
+    }
+
+    #imageAndContent {
+        margin: 25px;
+        text-align: center;
+    }
+
+    .content {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .ndaje {
+        display: block;
+    }
+
+    #feedback {
+        padding: 20px 20px;
+        margin: 10px 0;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    #education {
+        display: block;
+        text-align: center;
+    }
+
+    #education div {
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .content img {
+        width: 450px;
+    }
+
+    #contactMe {
+        display: block;
+    }
+
+    #contactMe form, #contactMe div {
+        padding: 30px;
+    }
+
+    #feedbackCards {
+        display: block;
+    }
+    .feedbackCard {
+        width: 90%;
+    }
+}
