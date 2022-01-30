@@ -16,8 +16,8 @@
 
  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script><br>
  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script><br>
- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script><br>
 
  * Pathi per vendosje te fajllave 
  
- C:\xampp\htdocs\Portofolio 
+  C:\xampp\htdocs\Portofolio 
