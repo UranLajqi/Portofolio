@@ -1,4 +1,3 @@
-# Portofolio
 
  * Per ekzekutim te portofolio-s duhet qe te start-ohet apache dhe mysql ne xammp
  
